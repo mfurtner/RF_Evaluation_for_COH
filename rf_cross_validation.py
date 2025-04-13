@@ -1,7 +1,6 @@
 #import necessary libraries
 import pandas as pd
 import numpy as np
-import itertools
 import gzip
 import pickle
 import matplotlib.pyplot as plt
