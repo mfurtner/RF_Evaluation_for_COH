@@ -8,4 +8,6 @@ test_folds.pkl : a pickle object containing test folds for model cross-validatio
 
 rf_cross_validation.py : Python functions and scripts to perform 10-fold cross valiation on RF models trained on topographic and geomporphological variables of cave/sinkhole sites in the CoH, producing average metrics including accuracy, precision, recall, F1 score, AUC, as well as an average confusion matrix and ROC curves for each iteration.
 
+rf_permutation_importance.py : Python functions and scripts to perform permutation importance assessments on individual variables for the RF model using the highest performing training/test folds. A specific function was written to keep collinear variables separate to better assess their indiviudal influences on model success.
+
 rf_models folder: contains 10 fit RF models as compressed (gzip) pickle objects, an output of rf_cross_validation.py, to be used in subsequent analyses
